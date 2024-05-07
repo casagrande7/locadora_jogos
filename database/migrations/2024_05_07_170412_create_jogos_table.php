@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('jogos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome', 120)->unique()->nullable(false);
+            $table->decimal('preco', 12, 2)->nullable(false);
+            $table->string('descricao', 800)->nullable(false);
+            $table->string('classificacao', 20)->nullable(false);
+            $table->string('plataformas', 60)->nullable(false);
+            $table->string('desenvolvedor', 120)->nullable(false);
+            $table->string('distribuidora', 120)->nullable(false);
+            $table->string('categoria', 55)->nullable(false);
             $table->timestamps();
         });
     }
