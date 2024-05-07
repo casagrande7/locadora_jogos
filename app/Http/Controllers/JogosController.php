@@ -69,7 +69,7 @@ class JogosController extends Controller
         ]);
     }
 
-    public function atualizar(UpdateJogosFormRequest $request)
+    public function atualizarJogos(UpdateJogosFormRequest $request)
     {
         $jogos = Jogos::find($request->id);
 
@@ -117,7 +117,7 @@ class JogosController extends Controller
         ]);
     }
 
-    public function excluirJogo($id)
+    public function excluirJogos($id)
     {
         $jogos = Jogos::find($id);
 
