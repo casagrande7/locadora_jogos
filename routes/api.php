@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 //* Jogos
-Route::post('cadastro/jogos', [JogosController::class, 'store']);
+Route::post('cadastro/jogos', [JogosController::class, 'cadastroJogos']);
 
-Route::get('pesquisa/jogo/{id}', [JogosController::class, 'pesquisaPorId']);
+Route::get('pesquisa/jogo/{id}', [JogosController::class, 'pesquisaPorIdJogos']);
 
 Route::post('buscaNome/jogo', [JogosController::class, 'pesquisarPorNomeJogo']);
 

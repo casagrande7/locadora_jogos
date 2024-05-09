@@ -24,8 +24,8 @@ class UpdateJogosFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-                'nome' => 'max:120|min:5|unique:jogos,nome,' .$this->id,
-                'preco' => 'decimal:12,2',
+                'nome' => 'max:120|min:5|unique:jogos,nome,' .  $this->id,
+                'preco' => 'decimal:2',
                 'descricao' => 'max:800|min:10',
                 'classificacao' => 'max:20|min:5',
                 'plataformas' => 'max:60|min:3',
@@ -37,7 +37,7 @@ class UpdateJogosFormRequest extends FormRequest
     public function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(response()->json([
-            'success' => false,
+            'status' => false,
             'error' => $validator->errors()
         ]));
     }

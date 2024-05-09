@@ -25,7 +25,7 @@ class JogosFormRequest extends FormRequest
     {
         return [
             'nome' => 'required|max:120|min:5|unique:jogos,nome',
-            'preco' => 'required|decimal:12,2',
+            'preco' => 'required|decimal:2',
             'descricao' => 'required|max:800|min:10',
             'classificacao' => 'required|max:20|min:5',
             'plataformas' => 'required|max:60|min:3',
@@ -38,7 +38,7 @@ class JogosFormRequest extends FormRequest
     public function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(response()->json([
-            'success' => false,
+            'status' => false,
             'error' => $validator->errors()
         ]));
     }
@@ -50,14 +50,14 @@ class JogosFormRequest extends FormRequest
             'nome.max' => 'O campo Nome deve conter no máximo 120 caracteres',
             'nome.min' => 'O campo Nome deve conter no mínimo 5 caracteres',
             'nome.unique' => 'Nome já cadastrado no sistema',
-            'preco.required' => 'O campo Celular é obrigatório',
+            'preco.required' => 'O campo Preço é obrigatório',
             'preco.decimal' => 'O campo Preço deve conter apenas valores em decimais',
             'descricao.required' => 'O campo Descrição é obrigatório',
             'descricao.max' => 'O campo Descrição deve conter no máximo 800 caracteres',
             'descricao.min' => 'O campo Descriçaõ deve conter no mínimo 10 caracteres',
-            'classificacao.required' => 'O campo Classificacao é obrigatório',
-            'classificacao.max' => 'O campo Classificacao deve conter no máximo 20 caracteres',
-            'classificacao.min' => 'O campo Classificacao deve conter no mínimo 5 caracteres',
+            'classificacao.required' => 'O campo Classificação é obrigatório',
+            'classificacao.max' => 'O campo Classificação deve conter no máximo 20 caracteres',
+            'classificacao.min' => 'O campo Classificação deve conter no mínimo 5 caracteres',
             'plataformas.required' => 'O campo Plataforma é obrigatório',
             'plataformas.max' => 'O campo Plataforma deve conter no máximo 60 caracteres',
             'plataformas.min' => 'O campo Plataforma deve conter no mínimo 3 caracteres',
