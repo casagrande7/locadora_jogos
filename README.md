@@ -5,6 +5,15 @@
 ![Logo](https://github.com/casagrande7/locadora_jogos/edit/main/logoJogos.png)
 </div>
 
+# Sobre o Projeto:
+A Locadora de Jogos desenvolvida por quatro alunos do SENAI é uma plataforma web que permite a locação de jogos eletrônicos de forma fácil e conveniente. O projeto foi desenvolvido com o objetivo de proporcionar uma experiência agradável aos entusiastas de jogos eletrônicos, que podem alugar títulos desejados por um período determinado, em vez de comprar.
+
+A locadora foi construída com tecnologias modernas, como HTML, CSS, JavaScript, Node.js e Express.js, e armazena os dados dos jogos e clientes em uma base de dados MySQL. O site é intuitivo e fácil de usar, permitindo que os usuários pesquisem e filtrem jogos por categorias, plataformas e preços.
+
+Além disso, a Locadora de Jogos oferece um sistema de login e cadastro, permitindo que os usuários gerenciem suas contas, vejam o histórico de aluguéis e recebam recomendações personalizadas. O sistema também inclui um painel de controle para os administradores, onde podem gerenciar os jogos, clientes e pedidos de aluguel.
+
+A Locadora de Jogos desenvolvida por quatro alunos do SENAI é um exemplo notável de como a tecnologia pode ser usada para criar soluções inovadoras e úteis. Com sua interface amigável e recursos avançados, a locadora tem o potencial de se tornar uma opção popular para os amantes de jogos eletrônicos.
+
 ## Como utilizar este repositório
 
 1. Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
