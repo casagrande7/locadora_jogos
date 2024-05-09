@@ -28,7 +28,7 @@ class JogosController extends Controller
         ], 200);
     }
 
-    public function pesquisaPorIdJogos($id)
+    public function pesquisarIdJogos($id)
     {
         $jogos = Jogos::find($id);
         if ($jogos == null) {
@@ -43,7 +43,7 @@ class JogosController extends Controller
         ]);
     }
 
-    public function pesquisarPorNomeJogo(Request $request)
+    public function pesquisarNomeJogo(Request $request)
     {
         $jogos = Jogos::where('nome', 'like', '%' . $request->nome . '%')->get();
 
