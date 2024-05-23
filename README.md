@@ -2,7 +2,7 @@
 =======
 <div align= "center">
 
-![Logo]()
+![Logo](https://github.com/casagrande7/locadora_jogos/blob/main/app/Assets/imagem/logos.png)
 </div>
 
 # Sobre o Projeto:
