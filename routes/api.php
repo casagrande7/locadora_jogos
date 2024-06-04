@@ -17,3 +17,4 @@ Route::get('return/all/games', [JogosController::class, 'retornarTodosJogos']);
 Route::put('update/game/{id}', [JogosController::class, 'atualizarJogos']);
 
 Route::delete('delete/game/{id}', [JogosController::class, 'excluirJogos']);
+
