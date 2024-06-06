@@ -142,4 +142,22 @@ class JogosController extends Controller
             'message' => "Jogo excluído com sucesso"
         ]);
     }
+
+    public function checarUnico(Request $request)
+    {
+        $nome = $request->nome;
+        $jogos = Jogos::where('nome', $nome)->first();
+        if ($jogos) {
+            return response()->json([
+                'status' => false,
+                'message' => "Jogo com nome '$nome' já existe"
+            ]);
+        } else {
+            return response()->json([
+                'status' => true,
+                'message' => "Nome '$nome' está disponível"
+            ]);
+        }
+    }
+
 }

@@ -18,4 +18,5 @@ Route::put('update/game/{id}', [JogosController::class, 'atualizarJogos']);
 
 Route::delete('delete/game/{id}', [JogosController::class, 'excluirJogos']);
 
+Route::get('check/unique', [JogosController::class], 'checarUnico');
 
