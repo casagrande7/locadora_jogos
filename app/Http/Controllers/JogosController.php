@@ -142,5 +142,4 @@ class JogosController extends Controller
             'message' => "Jogo excluído com sucesso"
         ]);
     }
-
 }
